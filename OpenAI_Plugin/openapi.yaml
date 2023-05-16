@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Project Generator API
+  version: 1.0.0
+paths:
+  /generate_project:
+    post:
+      summary: Generate a new Python project
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                project_name:
+                  type: string
+                code:
+                  type: string
+      responses:
+        200:
+          description: The project was successfully generated

@@ -1,0 +1,21 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Project Generator Plugin",
+    "name_for_model": "project_generator",
+    "description_for_human": "A plugin that generates Python projects.",
+    # "description_for_model": "This is a plugin for completing incomplete Python projects. To use it, provide the path to an existing project and a set of instructions for completing the project. The plugin will then modify the project based on these instructions to create a complete github repository.",
+    "description_for_model": "This plugin is designed to further the development of the application or project in question. It checks or writes .git for more information, listens to the user, and discusses how to best improve the code to ensure that all files and dependency prerequisites are met. It also catches errors during development rather than at production. The plugin's functioning lifecycle could be one response or it could be always running and iterating. It considers feedback before writing new functions and asks questions in a way that benefits the user. It also considers implications when starting a new function to better understand context."
+
+,
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:5000/openapi.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "http://localhost:5000/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "http://www.example.com/legal"
+}
